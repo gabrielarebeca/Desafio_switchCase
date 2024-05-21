@@ -1,0 +1,11 @@
+.containerHeader {
+    width: 350px;
+    height: 300px;
+    border: 1px solid lightgrey;
+    border-radius: 15%;
+}
+
+main {
+    display: center;
+    justify-content: center;
+}
