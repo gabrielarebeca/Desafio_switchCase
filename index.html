@@ -3,27 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="script.js">
     <link rel="stylesheet" href="style.css">
-    <title>Change Page Color</title>
+    <title>Votação</title>
 </head>
 <body>
 <main>
     <div class="containerHeader">
-    <h1> Qual seu voto?</h1>
-    <p> 1- Gabriela </p>
-    <p> 2- Julia </p>
-    <p> 3- Debora </p>
-    <p> 4- Claudia </p>
-    <p> 5- Nulo/ Branco </p>
-    <input type="text" placeholder="Escolha um candidato">
+        <h1> Escolha seu candidato</h1>
+        <p> 1- Gabriela </p>
+        <p> 2- Julia </p>
+        <p> 3- Debora </p>
+        <p> 4- Claudia </p>
+        <p> 5- Nulo/ Branco </p>
+        <button type="button" onclick="voto()">Informe seu voto</button>
+        <div id="candidatoSelecionado"></div>
     </div>
-    <button type="button" onclick="myFunction()">Mudar plano de fundo</button>
+    <br>
+    <button type="button" onclick="mudarCor()">Mudar plano de fundo</button>
 </main>
-</body>
 <script>
-    function myFunction() {
+    function mudarCor() {
     document.body.style.backgroundColor = "red";
     }
+
+    function voto() {
+    let voto = prompt ("Qual seu voto?");
+    let candidatoSelecionado = document.getElementById ("candidatoSelecionado");
+    switch (voto) {
+        case "1":
+            candidatoSelecionado.textContent = "Você votou na candidata Gabriela";
+            break
+        case "2":
+            candidatoSelecionado.textContent = "Você votou na candidata Julia";
+            break
+        case "3":
+            candidatoSelecionado.textContent = "Você votou na candidata Debora";
+            break
+        case "4":
+            candidatoSelecionado.textContent = "Você votou na candidata Claudia";
+            break
+        case "5":
+            candidatoSelecionado.textContent = "Você votou em Nulo/ Branco";
+            break
+        default:
+            candidatoSelecionado.textContent = "Insira um candidato válido";
+            break
+        }
+    }
 </script>
+</body>
 </html>

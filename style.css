@@ -1,11 +1,12 @@
 .containerHeader {
-    width: 350px;
+    width: 250px;
     height: 300px;
-    border: 1px solid lightgrey;
-    border-radius: 15%;
+    text-align: center;
 }
 
 main {
-    display: center;
+    display: flex;
+    float: left;
     justify-content: center;
+    align-items: center;
 }
