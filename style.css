@@ -1,12 +1,21 @@
-.containerHeader {
-    width: 250px;
-    height: 300px;
-    text-align: center;
+body {
+    background-color: lightgray;
 }
 
 main {
     display: flex;
-    float: left;
     justify-content: center;
     align-items: center;
+}
+
+.containerHeader {
+    width: 250px;
+    height: 330px;
+    border: 1px solid darkgray;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.containerButton {
+    justify-content: center;
 }

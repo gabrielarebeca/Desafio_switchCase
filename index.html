@@ -19,11 +19,18 @@
         <div id="candidatoSelecionado"></div>
     </div>
     <br>
+    <div class="containerButton">
     <button type="button" onclick="mudarCor()">Mudar plano de fundo</button>
+    <button type="button" onclick="voltarCor()">Voltar plano de fundo</button>
+    </div>
 </main>
 <script>
     function mudarCor() {
-    document.body.style.backgroundColor = "red";
+    document.body.style.backgroundColor = "tomato";
+    }
+
+    function voltarCor() {
+    document.body.style.backgroundColor = "lightgray";
     }
 
     function voto() {
