@@ -11,7 +11,3 @@ O projeto foi desenvolvido para resolver problemas lógicos utilizando a estrutu
 - 🧩 Uso de **switch-case** para controle de fluxo em diversas situações  
 - 🔄 Execução de diferentes ações dependendo do valor de entrada  
 - 💡 Demonstração de boas práticas no uso de estruturas de controle
-
-## 🛠 Tecnologias Utilizadas
-
-- **C#** (ou outra linguagem, dependendo da implementação)
